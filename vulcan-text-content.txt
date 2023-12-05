@@ -1,0 +1,113 @@
+Vulcan - Text Content
+
+*******
+Header Section:
+*******
+
+Install Map | Product Literature
+
++1 712-642-2755 | Contact Us
+
+
+- About
+- Products
+- Services
+- Parts
+- News
+- Contact
+
+We design and fabricate indestructible wastewater screens. Enough said.
+
+View Products | View Services
+
+*******************
+Customized Section:
+*******************
+
+Customize per order
+
+Just as no two treatment plants are the same, no two of our screening, grit handling or sludge thickening products are either. We’ll help determine exactly what you need.
+
+- Screening
+—- View Selection
+
+- Screenings Handling
+—— View Selection
+
+- Grit Handling
+—— View Selection
+
+- Sludge Thickening
+—— View Selection
+
+************************
+Product Advisor Section:
+************************
+
+Product Advisor
+
+Find your project’s perfect fit.
+
+Form:
+
+Labels: Product Type, Screen Location, Flow Type, Channel Depth, Channel Width
+
+Inputs: Select menus - first option - Select - Subsequent options fill with lorem ipsum
+
+Submit Button: Find My Product
+
+*****************
+About Us Section:
+*****************
+
+Delivering clean safe water since 1975. Refreshing indeed.
+
+Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900 cities and communities throughout the world.
+
+About Us
+
+**************
+Media Section:
+**************
+
+This section contains a Vimeo video embed: https://vimeo.com/183929811
+
+****************
+Sign Up Section:
+****************
+
+Form:
+
+Label: Stay in the know. Sign up for our newsletter.
+
+Input: Email or Text input - Placeholder - Enter your Email
+
+Submit Button: Submit
+
+*************************
+Spec and Install Section:
+*************************
+
+Spec Section:
+
+Ready to spec Vulcan for your project
+
+Button: Contact Us
+
+Install Section:
+
+Installed in a city near you
+
+Button: Find a Vulcan install
+
+***************
+Footer Section:
+***************
+
++1 712-642-2755 | Contact Us
+
+Copyright 2017. All rights reserved
+
+
+
+
