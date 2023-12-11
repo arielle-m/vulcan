@@ -1,3 +1,91 @@
 // Variables
 @use "sass:math";
 
+// Colors
+$pri: #439bd5;
+$pri-li: #bddbee;
+$pri-da: #244963;
+
+$light: #ffffff;
+$gray1: #bababa;
+$gray2: #737373;
+$gray3: #616161;
+$dark: #1f1f1f;
+
+
+
+// Semantic Color Names
+$brand-color: $pri;
+$brand-color-light: $pri-li;
+$brand-color-dark: $pri-da;
+
+// Background Colors
+$bg-color-light: $light;
+$bg-color-dark: $brand-color-dark;
+
+
+// TODO: replace pri-li and pri-da with these colour functions
+// Use Color functions to brighten and darken colors
+// $brand-color-dark: darken($brand-color, 20);
+// $brand-color-light: lighten($brand-color, 20);
+
+
+
+// Fonts
+$body-font: "Roboto", Arial, Helvetica, Verdana, sans-serif;
+$heading-font: "Roboto Condensed", Arial, Helvetica, Verdana, sans-serif;
+
+// Font Weights
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+// Typographic Defualts
+$line-height: 1.5;
+
+
+
+// TODO: Values below to be edited
+
+// Layout variables
+$padding: 30px;
+// Grid Values
+$gutter: 2;
+
+
+
+// Function to determine column width
+// takes two numerical parameters:
+// $c -> the number of columns in a row
+// $g -> the gutter amount
+@function colWidth($c, $g: 2){
+    @return (math.div(100 - $g * ($c - 1), $c)) * 1%;
+}
+
+$one-col: 100%;
+$two-col: colWidth(2);
+$three-col: colWidth(3);
+$four-col: colWidth(4);
+$five-col: colWidth(5);
+$six-col: colWidth(6);
+
+
+
+// Function to convert px to ems
+@function em($px, $bc: 16){
+    @return #{math.div($px, $bc)}em;
+}
+
+
+
+// Media Query Breakpoints
+$desktopMedium: em(1251);
+$tabletLandscape: em(1024);
+$tabletPortrait: em(850);
+$phoneLandscape: em(670);
+$phonePortrait: em(420);
+
+
+
+// Utility variables
+$link-hover-selector: '&:hover, &:focus, &:active';
