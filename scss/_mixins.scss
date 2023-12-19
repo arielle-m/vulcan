@@ -3,3 +3,11 @@
 // Mixins
 @use "variables" as *;
 
+// light/transparent button:
+@mixin btn($col: $light, $bg-col: transparent) {
+  background-color: $bg-col;
+  border: 1.7px solid $col;
+  color: $light;
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+}

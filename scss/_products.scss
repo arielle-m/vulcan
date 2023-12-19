@@ -2,3 +2,25 @@
 @use "variables" as *;
 // @use "mixins" as *;
 
+.products-list {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  overflow-x: hidden;
+
+  article {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+
+  article h3 {
+    align-self: center;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+
+  .product-bottom {
+    border-bottom: 2px solid $gray1;
+  }
+}

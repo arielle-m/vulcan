@@ -2,17 +2,18 @@
 @use "variables" as *;
 
 body {
-    font-family: $body-font;
-    line-height: $line-height;
+  font-family: $body-font;
+  line-height: $line-height;
+  text-align: center;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 nav a {
-    font-family: $heading-font;
-    text-transform: uppercase;
+  font-family: $heading-font;
+  text-transform: uppercase;
 }

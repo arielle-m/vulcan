@@ -39,35 +39,99 @@
           <!-- ul of nav links -->
         </nav>
       </header>
+
       <main id="site-main">
-        <header>
+        <header class="banner">
           <!-- banner/carousel -->
+            <!-- banner content -->
+          <section class="banner-content">
           <h1>
             We design and fabricate indestructible wastewater screens. Enough
             said.
           </h1>
           <button>View Products</button>
           <button>View Services</button>
+          </section>
+            <!-- carousel slider -->
+        <img class="banner-slider" src="images/header-slider-img-01.jpg" alt="banner background slider">
+            <!-- banner cover -->
           <img
+            class="banner-layer"
             src="images/wave-white.png"
             aria-hidden="true"
             alt="A layer of banner cover"
           />
         </header>
-        <section>
+        <section class="products">
           <!-- products / customized per order -->
           <h2>Customize per order</h2>
           <p>
             Just as no two treatment plants are the same, no two of our
             screening, grit handling or sludge thickening products are either.
-            We’ll help determine exactly what you need.
+            We&#8217ll help determine exactly what you need.
           </p>
+          <div class="products-list">
+            <article class="product-bottom">
+                <img
+                    src="images/machine-01-912x834.png"
+                    alt="An image of a machine"
+                    srcset="
+                    images/machine-01-912x834.png 912w,
+                    images/machine-01-768x702.png 768w,
+                    images/machine-01-300x274.png 300w"
+                    sizes="(max-width: 620px) 5rem,
+                    (max-width: 800px) 10rem,
+                    740px"
+                />
+                <h3>Screening</h3>
+            </article>
+            <article class="product-bottom">
+                <img
+                    src="images/machine-01-912x834.png"
+                    alt="An image of a machine"
+                    srcset="
+                    images/machine-02-912x834.png 912w,
+                    images/machine-02-768x702.png 768w,
+                    images/machine-02-300x274.png 300w"
+                    sizes="(max-width: 620px) 5rem,
+                    (max-width: 800px) 10rem,
+                    740px"
+                />
+                <h3>Screening Handling</h3>
+            </article>
+            <article class="product-bottom">
+                <img
+                    src="images/machine-01-912x834.png"
+                    alt="An image of a machine"
+                    srcset="
+                    images/machine-03-912x834.png 912w,
+                    images/machine-03-768x702.png 768w,
+                    images/machine-03-300x274.png 300w"
+                    sizes="(max-width: 620px) 5rem,
+                    (max-width: 800px) 10rem,
+                    740px"
+                />
+                <h3>Grit Handling</h3>
+            </article>
+            <article>
+                <img
+                    src="images/machine-01-912x834.png"
+                    alt="An image of a machine"
+                    srcset="
+                    images/machine-04-912x834.png 912w,
+                    images/machine-04-768x702.png 768w,
+                    images/machine-04-300x274.png 300w"
+                    sizes="
+                    (max-width: 620px) calc(100vw - 30px),
+                    (max-width: 800px) calc(100vw - 60px),
+                    740px"
+                />
+                <h3>Sludge Thickening</h3>
+            </article>
+          </div>
+            <!-- products cover -->
           <img
-            src="images/machine-01-300x274.png"
-            alt="An image of a machine"
-          />
-          <h3>Screening</h3>
-          <img
+            class="products-layer"
             src="images/wave-blue-dark.png"
             aria-hidden="true"
             alt="A layer of banner cover"
