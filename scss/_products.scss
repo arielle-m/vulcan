@@ -3,24 +3,52 @@
 // @use "mixins" as *;
 
 .products-list {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-  overflow-x: hidden;
+  margin: 1rem auto 2rem auto;
+  display: grid;
+  // justify-content: space-around;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
 
-  article {
-    display: flex;
-    justify-content: center;
-    padding: 3rem 0;
-  }
-
-  article h3 {
-    align-self: center;
-    padding-left: 1.5rem;
+  h3 {
     text-align: left;
+    justify-self: start;
+    padding: 0 1.5rem;
+    margin: 0;
   }
 
-  .product-bottom {
+  img {
+    // width: 10rem;
+    justify-self: end;
+    padding: 1.5rem 0 1.5rem 0.5rem;
+  }
+
+  .machine01-heading,
+  .machine02-heading,
+  .machine03-heading,
+  .machine04-heading {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+  }
+
+  .machine01-img,
+  .machine02-img,
+  .machine03-img,
+  .machine01-heading,
+  .machine02-heading,
+  .machine03-heading {
     border-bottom: 2px solid $gray1;
+  }
+
+  // 420px
+  @media (min-width: $phonePortrait) {
+  }
+
+  // 850px
+  @media (min-width: $tabletPortrait) {
+  }
+
+  // 1251px
+  @media (min-width: $desktopMedium) {
   }
 }
