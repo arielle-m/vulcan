@@ -10,13 +10,100 @@ header {
 // Carousel
 @include carousel(3);
 .carousel {
-  max-width: 100%;
-  overflow: hidden;
   height: 38em;
   margin: 0 auto;
 
-  .carousel__items img {
-    object-fit: cover;
+  .carousel-label {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  // 420px
+  @media (min-width: $phonePortrait) {
+    &__nav {
+      bottom: 7em;
+    }
+  }
+  //617px
+  @media (min-width: 38.56em) {
+    &__nav {
+      bottom: 9em;
+    }
+  }
+  // 850px
+  @media (min-width: $tabletPortrait) {
+    .carousel__nav {
+      > label {
+        width: 15px;
+        height: 15px;
+      }
+
+      .carousel-label {
+        margin-left: 9px;
+        margin-right: 9px;
+      }
+    }
+
+    &__nav {
+      bottom: 4.9em;
+    }
+  }
+  // 1251px:(.55') font sizes
+  @media (min-width: $desktopMedium) {
+    &__nav {
+      bottom: 5.8em;
+    }
+
+    height: 39em;
+
+    &__items,
+    &__item {
+      img {
+        height: 39em;
+      }
+    }
+  }
+  // 1538px:(.56')
+  @media (min-width: 96.1em) {
+    height: 56em;
+
+    &__nav {
+      bottom: 8em;
+    }
+
+    &__items,
+    &__item {
+      img {
+        height: 56em;
+      }
+    }
+  }
+  // 1850px:(.57')
+  @media (min-width: 115.625em) {
+    height: 76em;
+
+    &__nav {
+      bottom: 9.5em;
+    }
+
+    .carousel__nav {
+      > label {
+        width: 25px;
+        height: 25px;
+      }
+
+      .carousel-label {
+        margin-left: 17px;
+        margin-right: 17px;
+      }
+    }
+
+    &__items,
+    &__item {
+      img {
+        height: 76em;
+      }
+    }
   }
 }
 
@@ -30,54 +117,108 @@ header {
   position: absolute;
 
   .banner-content {
+    overflow: hidden;
     h1 {
       color: $light;
       font-size: 1.8rem;
+      line-height: 1.15em;
+      margin-bottom: 2.5rem;
     }
 
     button {
       @include btn;
-      margin: 1rem auto 0 auto;
+      margin: 0 auto;
+    }
+
+    button p {
+      font-size: 0.9em;
+      margin: 0 auto;
+    }
+
+    button.view-products {
+      margin-bottom: 1.3rem;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
     }
 
     display: flex;
     flex-direction: column;
-    margin: 7em 2em;
+    margin: 5em 1em auto 1em;
+  }
+  .banner-layer-container {
+    overflow-x: hidden;
   }
 
   .banner-layer {
     position: absolute;
     max-width: none;
-    width: 480px;
-    height: 75px;
-    bottom: 0;
+    width: 200vw;
+    height: 80px;
+    bottom: -0.5rem;
     left: -1rem;
     right: 0;
   }
 
   .products-layer-container {
-    height: 75px;
+    height: 4.69em;
   }
 
   // 420px
-  // @media (min-width: $phonePortrait) {
+  @media (min-width: $phonePortrait) {
+    .banner-content {
+      margin-top: 7em;
 
-  // }
+      h1 {
+        line-height: 1.3em;
+        margin-bottom: 3rem;
+      }
 
-  //617px
-  // @media (min-width: 38.56em) {
-
-  // }
-
-  // 850px
-  @media (min-width: $tabletPortrait) {
-    h1 {
-      font-size: 2em;
+      button p {
+        font-size: 1em;
+      }
     }
 
+    .banner-layer {
+      height: 6.25em;
+    }
+  }
+
+  //617px
+  @media (min-width: 38.56em) {
+    .banner-content {
+      margin-top: 7.5em;
+    }
+
+    .banner-layer {
+      height: 7.5em;
+    }
+  }
+
+  // 850px: button one line
+  @media (min-width: $tabletPortrait) {
     .banner-content {
       //wrapper
-      margin: 1rem 2em 0 2em;
+      margin: 11.5em 4em 0 4em;
+
+      h1 {
+        font-size: 2.45em;
+      }
+
+      button p {
+        font-weight: $bold;
+      }
+
+      .button-container {
+        display: block;
+      }
+
+      button.view-products {
+        margin-right: 1.3rem;
+      }
     }
     //layer
     .banner-layer {
@@ -85,14 +226,80 @@ header {
       height: auto;
       max-width: 100%;
       left: 0;
+      margin-left: 0;
     }
   }
 
-  // 1251px: font sizes
+  // 1251px:(.55') font sizes
   @media (min-width: $desktopMedium) {
+    height: 39em;
+
     .banner-content {
       //wrapper
-      margin: 1rem 3em 0 3em;
+      margin: 13.5em 10em 0 10em;
+      h1 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  // 1538px:(.56')
+  @media (min-width: 96.1em) {
+    height: 56em;
+
+    .banner-content {
+      //wrapper
+      margin: 24em 12em 0 12em;
+
+      h1 {
+        font-size: 3.5em;
+      }
+
+      button {
+        padding: 1rem 0.8rem;
+      }
+
+      button p {
+        font-size: 1.2em;
+      }
+
+      button.view-products {
+        margin-right: 3.8rem;
+      }
+    }
+  }
+  // 1850px:(.57')
+  @media (min-width: 115.625em) {
+    height: 76em;
+
+    .banner-content {
+      //wrapper
+      margin: 24em 15em 0 15em;
+
+      h1 {
+        font-size: 6.5em;
+        line-height: 1.2em;
+      }
+
+      button {
+        padding: 1rem 3rem;
+      }
+
+      button p {
+        font-size: 1.7em;
+      }
+
+      button.view-products {
+        margin-right: 4.7rem;
+      }
+
+      .button-container {
+        margin-top: 4.5rem;
+      }
+    }
+
+    .banner-layer {
+      width: 100vw;
     }
   }
 }

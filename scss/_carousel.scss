@@ -12,14 +12,19 @@ This file is modified from:
 
 %animation-default {
   opacity: 1 !important;
-  z-index: 0;
+  z-index: 3;
 }
 
 @mixin carousel($items, $animation: "default") {
   .carousel {
-    width: 100%;
+    max-width: 100%;
     position: relative;
     overflow: hidden;
+
+    // > input[type="radio"]:checked:after {
+    //   background-color: $pri;
+    //   border: 2px solid $pri;
+    // }
 
     > input[type="radio"] {
       position: absolute;
@@ -46,42 +51,44 @@ This file is modified from:
               }
             }
 
-            // ~ .carousel__prev {
-            //   > label {
-            //     @if $i == 1 {
-            //       &:nth-child(#{$items}) {
-            //         @extend %animation-default;
-            //       }
-            //     } @else if $i == $items {
-            //       &:nth-child(#{$items - 1}) {
-            //         @extend %animation-default;
-            //       }
-            //     } @else {
-            //       &:nth-child(#{$i - 1}) {
-            //         @extend %animation-default;
-            //       }
-            //     }
-            //   }
-            // }
+            ~ .carousel__prev {
+              > label {
+                @if $i == 1 {
+                  &:nth-child(#{$items}) {
+                    @extend %animation-default;
+                  }
+                } @else if $i == $items {
+                  &:nth-child(#{$items - 1}) {
+                    @extend %animation-default;
+                  }
+                } @else {
+                  &:nth-child(#{$i - 1}) {
+                    @extend %animation-default;
+                  }
+                }
+              }
+            }
 
-            // ~ .carousel__next {
-            //   > label {
-            //     @if $i == $items {
-            //       &:nth-child(1) {
-            //         @extend %animation-default;
-            //       }
-            //     } @else {
-            //       &:nth-child(#{$i + 1}) {
-            //         @extend %animation-default;
-            //       }
-            //     }
-            //   }
-            // }
+            ~ .carousel__next {
+              > label {
+                @if $i == $items {
+                  &:nth-child(1) {
+                    @extend %animation-default;
+                  }
+                } @else {
+                  &:nth-child(#{$i + 1}) {
+                    @extend %animation-default;
+                  }
+                }
+              }
+            }
 
             ~ .carousel__nav {
               > label {
                 &:nth-child(#{$i}) {
-                  background: #ccc;
+                  background: $pri;
+                  border: 1px solid $pri;
+
                   cursor: default;
                   pointer-events: none;
                 }
@@ -96,8 +103,8 @@ This file is modified from:
       margin: 0;
       padding: 0;
       list-style-type: none;
-      width: 100%;
-      height: 600px;
+      max-width: 100%;
+      height: 38em;
       position: relative;
     }
 
@@ -113,14 +120,17 @@ This file is modified from:
 
       img {
         width: 100%;
+        height: 38em;
         vertical-align: middle;
+        object-fit: cover;
+        object-position: center;
       }
     }
 
     &__prev,
     &__next {
       > label {
-        border: 1px solid #fff;
+        border: 1px solid transparent;
         border-radius: 50%;
         cursor: pointer;
         display: block;
@@ -149,13 +159,14 @@ This file is modified from:
         }
 
         &:before {
-          background: linear-gradient(
-              to top,
-              #fff 0%,
-              #fff 10%,
-              rgba(51, 51, 51, 0) 10%
-            ),
-            linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+          background: none;
+          // linear-gradient(
+          //     to top,
+          //     #fff 0%,
+          //     #fff 10%,
+          //     rgba(51, 51, 51, 0) 10%
+          //   ),
+          //   linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
           width: 60%;
           height: 60%;
           top: 20%;
@@ -190,34 +201,32 @@ This file is modified from:
 
     &__nav {
       position: absolute;
-      bottom: 3%;
+      //slide dots
+      bottom: 5.5em;
       left: 0;
+      right: 0;
       text-align: center;
       width: 100%;
-      z-index: 3;
+      z-index: 200;
 
       > label {
-        border: 1px solid #fff;
+        border: 1px solid $light;
+        background-color: $light;
         display: inline-block;
         border-radius: 50%;
         cursor: pointer;
         margin: 0 0.125%;
-        width: 20px;
-        height: 20px;
+        width: 9px;
+        height: 9px;
       }
     }
   }
 }
 
-*,
-*:before,
-*:after {
+.carousel *,
+.carousel *:before,
+.carousel *:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
-// body {
-//   background: #fcfcfc;
-//   margin: 0;
-// }

@@ -23,6 +23,7 @@
 
     <!-- external -->
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="scripts/carousel.js" defer />
   </head>
   <body id="#top">
     <a href="#site-main" class="screen-reader-text">Skip to content</a>
@@ -34,7 +35,7 @@
           <input type="radio" id="carousel-2" name="carousel[]" />
           <input type="radio" id="carousel-3" name="carousel[]" />
           <!-- <input type="radio" id="carousel-4" name="carousel[]" />
-            <input type="radio" id="carousel-5" name="carousel[]" /> -->
+          <input type="radio" id="carousel-5" name="carousel[]" /> -->
           <ul class="carousel__items">
             <li class="carousel__item">
               <img
@@ -55,38 +56,38 @@
               />
             </li>
             <!-- <li class="carousel__item">
-                <img
-                  src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg"
-                  alt=""
-                />
-              </li>
-              <li class="carousel__item">
-                <img
-                  src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg"
-                  alt=""
-                />
-              </li> -->
+              <img
+                src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg"
+                alt=""
+              />
+            </li>
+            <li class="carousel__item">
+              <img
+                src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg"
+                alt=""
+              />
+            </li> -->
           </ul>
-          <!-- <div class="carousel__prev">
-              <label for="carousel-1"></label>
-              <label for="carousel-2"></label>
-              <label for="carousel-3"></label>
-              <label for="carousel-4"></label>
-              <label for="carousel-5"></label>
-            </div>
-            <div class="carousel__next">
-              <label for="carousel-1"></label>
-              <label for="carousel-2"></label>
-              <label for="carousel-3"></label>
-              <label for="carousel-4"></label>
-              <label for="carousel-5"></label>
-            </div> -->
-          <div class="carousel__nav">
+          <div class="carousel__prev">
             <label for="carousel-1"></label>
             <label for="carousel-2"></label>
             <label for="carousel-3"></label>
             <!-- <label for="carousel-4"></label>
-              <label for="carousel-5"></label> -->
+            <label for="carousel-5"></label> -->
+          </div>
+          <div class="carousel__next">
+            <label for="carousel-1"></label>
+            <label for="carousel-2"></label>
+            <label for="carousel-3"></label>
+            <!-- <label for="carousel-4"></label>
+            <label for="carousel-5"></label> -->
+          </div>
+          <div class="carousel__nav">
+            <label for="carousel-1"></label>
+            <label class="carousel-label" for="carousel-2"></label>
+            <label for="carousel-3"></label>
+            <!-- <label for="carousel-4"></label>
+            <label for="carousel-5"></label> -->
           </div>
         </div>
 
@@ -111,8 +112,10 @@
               We design and fabricate indestructible wastewater screens. Enough
               said.
             </h1>
-            <button>View Products</button>
-            <button>View Services</button>
+            <div class="button-container">
+              <button class="view-products"><p>VIEW PRODUCTS</p></button>
+              <button><p>VIEW SERVICES</p></button>
+            </div>
           </div>
 
           <!-- banner cover -->
@@ -169,7 +172,7 @@
               />
             </div>
             <div class="machine02-heading machine-heading">
-              <h3>Screenings Handling</h3>
+              <h3>Screenings <br />Handling</h3>
             </div>
             <a href="#" class="product-view-selection product-view02"
               ><p>View Selection</p></a
@@ -188,7 +191,7 @@
               />
             </div>
             <div class="machine03-heading machine-heading">
-              <h3>Grit Handling</h3>
+              <h3>Grit <br />Handling</h3>
             </div>
             <a href="#" class="product-view-selection product-view03"
               ><p>View Selection</p></a
@@ -207,7 +210,7 @@
               />
             </div>
             <div class="machine04-heading machine-heading">
-              <h3>Sludge Thickening</h3>
+              <h3>Sludge <br />Thickening</h3>
             </div>
             <a href="#" class="product-view-selection product-view04"
               ><p>View Selection</p></a

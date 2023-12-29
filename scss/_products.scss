@@ -63,16 +63,14 @@
 
   .products-layer {
     max-width: none;
-    width: 480px;
-    height: 75px;
-    position: absolute;
-    bottom: 0;
-    left: -1rem;
-    right: 0;
+    width: 200vw;
+    height: 80px;
+    bottom: -0.5rem;
+    margin-left: -1rem;
   }
 
   .products-layer-container {
-    height: 75px;
+    overflow: hidden;
   }
 
   // 420px
@@ -82,6 +80,11 @@
       .products-list-margin {
         margin-left: 1rem;
       }
+    }
+
+    .products-layer,
+    .products-layer-container {
+      height: 6.25em;
     }
   }
 
@@ -96,13 +99,18 @@
         margin-left: 1rem;
       }
     }
+
+    .products-layer,
+    .products-layer-container {
+      height: 7.5em;
+    }
   }
 
   // 850px: change layer; show "View Selection"
   @media (min-width: $tabletPortrait) {
     h2 {
       color: $pri-da;
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
 
     .product-description {
@@ -190,19 +198,103 @@
       }
     }
     //layer
-    .products-layer {
-      width: auto;
-      height: auto;
+    .products-layer,
+    .products-layer-container {
+      width: 100vw;
       max-width: 100%;
       left: 0;
+      margin-left: 0;
     }
   }
 
-  // 1251px: font sizes, grid height
+  // 1251px: font sizes
   @media (min-width: $desktopMedium) {
+    h2 {
+      font-size: 1.9em;
+    }
+
+    .product-description {
+      margin: 0 10rem 3rem 10rem;
+    }
+
     .products-list {
       //wrapper
       margin: 1rem 3em 0 3em;
+
+      h3 {
+        font-size: 1.4em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  // 1538px:(.56')
+  @media (min-width: 96.1em) {
+    h2 {
+      font-size: 2.8em;
+    }
+
+    .product-description {
+      margin: 2rem 17rem 3rem 17rem;
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+
+    .products-list {
+      //wrapper
+      margin: 1rem 3em 0 3em;
+      .machine-heading {
+        h3 {
+          font-size: 1.8em;
+          line-height: 1.3em;
+        }
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  // 1850px:(.57')
+  @media (min-width: 115.625em) {
+    h2 {
+      font-size: 3.2em;
+    }
+
+    .product-description {
+      margin: 2.7rem 17rem 5.5rem 17rem;
+      font-size: 1.8em;
+      line-height: 1.5em;
+    }
+
+    .products-layer-container {
+      // height: unset;
+    }
+
+    .products-layer {
+      width: 100vw;
+      margin-left: 0;
+    }
+
+    .products-list {
+      //wrapper
+      margin: 0 5em;
+      .machine-heading {
+        h3 {
+          font-size: 2.5em;
+          line-height: 1.3em;
+          margin-top: 2rem;
+        }
+      }
+
+      p {
+        font-size: 1.5em;
+        margin-top: 1rem;
+      }
     }
   }
 }
