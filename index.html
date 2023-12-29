@@ -28,30 +28,30 @@
     <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <div class="site-wrapper">
       <header>
-        <a href="#">
-          <!-- img of logo -->
-          <p>Logo</p>
-        </a>
-        <nav>
-          <!-- hamburger menu button & svg -->
-          <button>Hamburger menu button</button>
+        <section>
+          <!-- navigation -->
+          <a href="#">
+            <!-- img of logo -->
+            <p>Logo</p>
+          </a>
+          <nav>
+            <!-- hamburger menu button & svg -->
+            <button>Hamburger menu button</button>
 
-          <!-- ul of nav links -->
-        </nav>
-      </header>
+            <!-- ul of nav links -->
+          </nav>
+        </section>
 
-      <main id="site-main">
-        <header class="banner">
-          <!-- banner/carousel -->
+        <section class="banner">
           <!-- banner content -->
-          <section class="banner-content">
+          <div class="banner-content">
             <h1>
               We design and fabricate indestructible wastewater screens. Enough
               said.
             </h1>
             <button>View Products</button>
             <button>View Services</button>
-          </section>
+          </div>
           <!-- carousel slider -->
           <img
             class="banner-slider"
@@ -65,11 +65,14 @@
             aria-hidden="true"
             alt="A layer of banner cover"
           />
-        </header>
+        </section>
+      </header>
+      <main id="site-main">
         <section class="products">
           <!-- products / customized per order -->
-          <h2>Customize per order</h2>
-          <p>
+
+          <h2>Customized per order</h2>
+          <p class="product-description">
             Just as no two treatment plants are the same, no two of our
             screening, grit handling or sludge thickening products are either.
             We&#8217;ll help determine exactly what you need.
@@ -77,6 +80,7 @@
           <article class="products-list">
             <div class="machine01-img">
               <img
+                class="products-list-margin"
                 src="images/machine-01-300x274.png"
                 alt="An image of a machine"
                 srcset="
@@ -86,12 +90,16 @@
                 "
               />
             </div>
-            <div class="machine01-heading">
+            <div class="machine01-heading machine-heading">
               <h3>Screening</h3>
             </div>
+            <a href="#" class="product-view-selection product-view01"
+              ><p>View Selection</p></a
+            >
 
             <div class="machine02-img">
               <img
+                class="products-list-margin"
                 src="images/machine-02-300x274.png"
                 alt="An image of a machine"
                 srcset="
@@ -101,12 +109,16 @@
                 "
               />
             </div>
-            <div class="machine02-heading">
-              <h3>Screening Handling</h3>
+            <div class="machine02-heading machine-heading">
+              <h3>Screenings Handling</h3>
             </div>
+            <a href="#" class="product-view-selection product-view02"
+              ><p>View Selection</p></a
+            >
 
             <div class="machine03-img">
               <img
+                class="products-list-margin"
                 src="images/machine-03-300x274.png"
                 alt="An image of a machine"
                 srcset="
@@ -116,12 +128,16 @@
                 "
               />
             </div>
-            <div class="machine03-heading">
+            <div class="machine03-heading machine-heading">
               <h3>Grit Handling</h3>
             </div>
+            <a href="#" class="product-view-selection product-view03"
+              ><p>View Selection</p></a
+            >
 
             <div class="machine04-img">
               <img
+                class="products-list-margin"
                 src="images/machine-04-300x274.png"
                 alt="An image of a machine"
                 srcset="
@@ -131,17 +147,22 @@
                 "
               />
             </div>
-            <div class="machine04-heading">
+            <div class="machine04-heading machine-heading">
               <h3>Sludge Thickening</h3>
             </div>
+            <a href="#" class="product-view-selection product-view04"
+              ><p>View Selection</p></a
+            >
           </article>
           <!-- products cover -->
-          <img
-            class="products-layer"
-            src="images/wave-blue-dark.png"
-            aria-hidden="true"
-            alt="A layer of banner cover"
-          />
+          <div class="products-layer-container">
+            <img
+              class="products-layer"
+              src="images/wave-blue-dark.png"
+              aria-hidden="true"
+              alt="A layer of banner cover"
+            />
+          </div>
         </section>
         <section>
           <!-- search / product advisor -->

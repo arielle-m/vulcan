@@ -4,73 +4,71 @@
 
 // Body
 body {
-    background-color: $light;
+  background-color: $light;
 }
 
 // Links
 a,
 a:visited {
-    color: $gray3;
+  color: $gray3;
 }
 
 a:hover,
 a:focus {
-    color: $gray2;
+  color: $gray2;
 }
 
 a:focus {
-    border: 2px solid $brand-color-dark;
+  border: 2px solid $brand-color-dark;
 }
 
 a:active {
-    color: $light;
-    background-color: $brand-color-dark;
+  color: $light;
+  background-color: $brand-color-dark;
 }
 
 // Anchor Tag Buttons
 a.button {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
-
 
 a.button-fill,
 a.button-fill:visited {
-    background-color: $brand-color;
-    color: $light;
+  background-color: $brand-color;
+  color: $light;
 }
 
 a.button-fill:hover,
 a.button-fill:focus {
-    background-color: $brand-color-light;
+  background-color: $brand-color-light;
 }
 
 a.button-fill:focus {
-    border: 2px solid $brand-color-dark;
+  border: 2px solid $brand-color-dark;
 }
 
 a.button-fill:active {
-    background-color: $brand-color-dark;
+  background-color: $brand-color-dark;
 }
-
 
 a.button-outline,
 a.button-outline:visited {
-    border: 1px solid $light;
-    color: $light;
+  border: 1px solid $light;
+  color: $light;
 }
 
 a.button-outline:hover,
 a.button-outline:focus {
-    border: 1px solid $brand-color-light;
-    color: $brand-color-light;
+  border: 1px solid $brand-color-light;
+  color: $brand-color-light;
 }
 
 a.button-outline:focus {
-    border: 2px solid $brand-color-dark;
+  border: 2px solid $brand-color-dark;
 }
 
 a.button-outline:active {
-    border: 1px solid $brand-color-dark;
-    color: $brand-color-dark;
-    background-color: $brand-color-light;
+  border: 1px solid $brand-color-dark;
+  color: $brand-color-dark;
+  background-color: $brand-color-light;
 }

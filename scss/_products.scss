@@ -2,53 +2,207 @@
 @use "variables" as *;
 // @use "mixins" as *;
 
-.products-list {
-  margin: 1rem auto 2rem auto;
-  display: grid;
-  // justify-content: space-around;
-  grid-template-columns: 1.3fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
+.products {
+  position: relative;
 
-  h3 {
-    text-align: left;
-    justify-self: start;
-    padding: 0 1.5rem;
-    margin: 0;
+  h2 {
+    font-size: 1.4rem;
+    color: $gray3;
+    margin: 1rem 5rem;
+    line-height: 1.8rem;
   }
 
-  img {
-    // width: 10rem;
-    justify-self: end;
-    padding: 1.5rem 0 1.5rem 0.5rem;
+  p {
+    margin: 0 2rem 0.5rem 2rem;
   }
 
-  .machine01-heading,
-  .machine02-heading,
-  .machine03-heading,
-  .machine04-heading {
-    align-self: stretch;
-    display: flex;
-    align-items: center;
+  .products-list {
+    //wrapper
+    margin: 1rem 1em 0 1em;
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+    h3 {
+      color: $gray3;
+      text-align: left;
+      justify-self: start;
+      padding: 0 1.5rem;
+      margin: 0;
+    }
+
+    img {
+      // width: 10rem;
+      justify-self: end;
+      padding: 1.5rem 0 1.5rem 0.5rem;
+    }
+
+    .product-view-selection {
+      display: none;
+    }
+
+    .machine01-heading,
+    .machine02-heading,
+    .machine03-heading,
+    .machine04-heading {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+    }
+
+    .machine01-img,
+    .machine02-img,
+    .machine03-img,
+    .machine01-heading,
+    .machine02-heading,
+    .machine03-heading {
+      border-bottom: 2px solid $gray1;
+    }
   }
 
-  .machine01-img,
-  .machine02-img,
-  .machine03-img,
-  .machine01-heading,
-  .machine02-heading,
-  .machine03-heading {
-    border-bottom: 2px solid $gray1;
+  .products-layer {
+    max-width: none;
+    width: 480px;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    left: -1rem;
+    right: 0;
+  }
+
+  .products-layer-container {
+    height: 75px;
   }
 
   // 420px
   @media (min-width: $phonePortrait) {
+    .products-list {
+      grid-template-columns: 1.8fr 1fr;
+      .products-list-margin {
+        margin-left: 1rem;
+      }
+    }
   }
 
-  // 850px
+  //617px
+  @media (min-width: 38.56em) {
+    .products-list {
+      .products-list-margin {
+        margin-left: 1rem;
+      }
+
+      h3 {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  // 850px: change layer; show "View Selection"
   @media (min-width: $tabletPortrait) {
+    h2 {
+      color: $pri-da;
+      font-size: 1.5em;
+    }
+
+    .product-description {
+      margin: 0 5rem 3rem 5rem;
+    }
+
+    .products-list {
+      //wrapper
+      margin: 1rem 2em 0 2em;
+
+      h3 {
+        color: $pri;
+      }
+
+      //View Selection
+      .product-view-selection {
+        display: block;
+        text-align: center;
+      }
+
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 0.35fr 0.3fr;
+
+      .machine-heading h3 {
+        margin: 0 3rem 0 3rem;
+        line-height: 1.5rem;
+        padding: 0;
+        text-align: center;
+      }
+
+      //Products heading
+      .machine-heading {
+        align-items: start;
+        justify-content: center;
+      }
+
+      //Product img
+      .products-list-margin {
+        padding: 0;
+        margin: 0 auto 1rem auto;
+      }
+
+      .machine01-img,
+      .machine02-img,
+      .machine03-img,
+      .machine01-heading,
+      .machine02-heading,
+      .machine03-heading {
+        border-bottom: none;
+      }
+
+      .machine02-img {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+
+      .machine03-img {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+
+      .machine04-img {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+      }
+
+      .product-view01 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      }
+
+      .product-view02 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+      }
+
+      .product-view03 {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+      }
+
+      .product-view03 {
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+      }
+    }
+    //layer
+    .products-layer {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      left: 0;
+    }
   }
 
-  // 1251px
+  // 1251px: font sizes, grid height
   @media (min-width: $desktopMedium) {
+    .products-list {
+      //wrapper
+      margin: 1rem 3em 0 3em;
+    }
   }
 }

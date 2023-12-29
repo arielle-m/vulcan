@@ -4,34 +4,39 @@
 
 .banner {
   position: relative;
-}
+  // overflow: hidden;
 
-.banner-content {
-  h1 {
-    color: $light;
+  .banner-content {
+    h1 {
+      color: $light;
+      font-size: 1.8rem;
+    }
+
+    button {
+      @include btn;
+      margin: 1rem auto 0 auto;
+    }
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem;
   }
 
-  button {
-    @include btn;
-    margin: 1rem auto 0 auto;
+  .banner-slider {
+    height: 34rem;
   }
 
-  position: absolute;
-  left: 0;
-  right: 0;
-
-  display: flex;
-  flex-direction: column;
-  margin: 3rem 2rem;
-}
-
-.banner-slider {
-  height: 34rem;
-}
-
-.banner-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  .banner-layer {
+    max-width: none;
+    width: 480px;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    left: -1rem;
+    right: 0;
+  }
 }
