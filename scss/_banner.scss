@@ -1,10 +1,33 @@
-// Banner Carousel Styles
+// Banner & Carousel Styles
 @use "variables" as *;
 @use "mixins" as *;
+@use "carousel" as *;
 
-.banner {
+header {
   position: relative;
-  // overflow: hidden;
+}
+
+// Carousel
+@include carousel(3);
+.carousel {
+  max-width: 100%;
+  overflow: hidden;
+  height: 38em;
+  margin: 0 auto;
+
+  .carousel__items img {
+    object-fit: cover;
+  }
+}
+
+// Banner
+.banner {
+  z-index: 90;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 38em;
+  position: absolute;
 
   .banner-content {
     h1 {
@@ -17,26 +40,59 @@
       margin: 1rem auto 0 auto;
     }
 
-    position: absolute;
-    left: 0;
-    right: 0;
-
     display: flex;
     flex-direction: column;
-    margin: 3rem 2rem;
-  }
-
-  .banner-slider {
-    height: 34rem;
+    margin: 7em 2em;
   }
 
   .banner-layer {
+    position: absolute;
     max-width: none;
     width: 480px;
     height: 75px;
-    position: absolute;
     bottom: 0;
     left: -1rem;
     right: 0;
+  }
+
+  .products-layer-container {
+    height: 75px;
+  }
+
+  // 420px
+  // @media (min-width: $phonePortrait) {
+
+  // }
+
+  //617px
+  // @media (min-width: 38.56em) {
+
+  // }
+
+  // 850px
+  @media (min-width: $tabletPortrait) {
+    h1 {
+      font-size: 2em;
+    }
+
+    .banner-content {
+      //wrapper
+      margin: 1rem 2em 0 2em;
+    }
+    //layer
+    .banner-layer {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      left: 0;
+    }
+  }
+
+  // 1251px: font sizes
+  @media (min-width: $desktopMedium) {
+    .banner-content {
+      //wrapper
+      margin: 1rem 3em 0 3em;
+    }
   }
 }

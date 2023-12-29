@@ -1,16 +1,21 @@
 /**
+This file is modified from:
  * Carousel.sass
  * @author: Dang Van Thanh
  * @email: dangvanthanh@dangthanh.org
  * @description: A Simple Carousel Pure CSS Using Sass
  * @version: 0.1.0
+ * MIT License: https://github.com/dangvanthanh/carousel.sass/blob/master/LICENSE
+ * Link to the source: https://github.com/dangvanthanh/carousel.sass?tab=readme-ov-file
  */
+@use "variables" as *;
+
 %animation-default {
   opacity: 1 !important;
-  z-index: 3;
+  z-index: 0;
 }
 
-@mixin carousel($items, $animation: 'default') {
+@mixin carousel($items, $animation: "default") {
   .carousel {
     width: 100%;
     position: relative;
@@ -18,9 +23,9 @@
 
     > input[type="radio"] {
       position: absolute;
-      top: 0;
       left: 0;
       opacity: 0;
+      top: 0;
 
       &:checked {
         ~ .carousel__items .carousel__item,
@@ -34,44 +39,44 @@
         &:nth-child(#{$i}) {
           &:checked {
             ~ .carousel__items .carousel__item {
-              @if $animation == 'default' {
+              @if $animation == "default" {
                 &:nth-child(#{$i}) {
                   opacity: 1;
                 }
               }
             }
 
-            ~ .carousel__prev {
-              > label {
-                @if $i == 1 {
-                  &:nth-child(#{$items}) {
-                    @extend %animation-default;
-                  }
-                } @else if $i == $items {
-                  &:nth-child(#{$items - 1}) {
-                    @extend %animation-default;
-                  }
-                } @else {
-                  &:nth-child(#{$i - 1}) {
-                    @extend %animation-default;
-                  }
-                }
-              }
-            }
+            // ~ .carousel__prev {
+            //   > label {
+            //     @if $i == 1 {
+            //       &:nth-child(#{$items}) {
+            //         @extend %animation-default;
+            //       }
+            //     } @else if $i == $items {
+            //       &:nth-child(#{$items - 1}) {
+            //         @extend %animation-default;
+            //       }
+            //     } @else {
+            //       &:nth-child(#{$i - 1}) {
+            //         @extend %animation-default;
+            //       }
+            //     }
+            //   }
+            // }
 
-            ~ .carousel__next {
-              > label {
-                @if $i == $items {
-                  &:nth-child(1) {
-                    @extend %animation-default;
-                  }
-                } @else {
-                  &:nth-child(#{$i + 1}) {
-                    @extend %animation-default;
-                  }
-                }
-              }
-            }
+            // ~ .carousel__next {
+            //   > label {
+            //     @if $i == $items {
+            //       &:nth-child(1) {
+            //         @extend %animation-default;
+            //       }
+            //     } @else {
+            //       &:nth-child(#{$i + 1}) {
+            //         @extend %animation-default;
+            //       }
+            //     }
+            //   }
+            // }
 
             ~ .carousel__nav {
               > label {
@@ -125,14 +130,14 @@
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        transition: all .3s ease;
-        -webkit-transition: all .3s ease;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
         opacity: 0;
         z-index: 2;
 
         &:hover,
         &:focus {
-          opacity: .5 !important;
+          opacity: 0.5 !important;
         }
 
         &:before,
@@ -144,7 +149,13 @@
         }
 
         &:before {
-          background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+          background: linear-gradient(
+              to top,
+              #fff 0%,
+              #fff 10%,
+              rgba(51, 51, 51, 0) 10%
+            ),
+            linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
           width: 60%;
           height: 60%;
           top: 20%;
@@ -190,10 +201,23 @@
         display: inline-block;
         border-radius: 50%;
         cursor: pointer;
-        margin: 0 .125%;
+        margin: 0 0.125%;
         width: 20px;
         height: 20px;
       }
     }
   }
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+// body {
+//   background: #fcfcfc;
+//   margin: 0;
+// }

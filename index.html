@@ -28,8 +28,70 @@
     <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <div class="site-wrapper">
       <header>
-        <section>
-          <!-- navigation -->
+        <!-- The carousel section is modified from https://github.com/dangvanthanh/carousel.sass?tab=readme-ov-file   -->
+        <div class="carousel">
+          <input type="radio" id="carousel-1" name="carousel[]" checked />
+          <input type="radio" id="carousel-2" name="carousel[]" />
+          <input type="radio" id="carousel-3" name="carousel[]" />
+          <!-- <input type="radio" id="carousel-4" name="carousel[]" />
+            <input type="radio" id="carousel-5" name="carousel[]" /> -->
+          <ul class="carousel__items">
+            <li class="carousel__item">
+              <img
+                src="images/header-slider-img-01.jpg"
+                alt="Carousel background image of a machine"
+              />
+            </li>
+            <li class="carousel__item">
+              <img
+                src="images/header-slider-img-02.jpg"
+                alt="Carousel background image of a technician working"
+              />
+            </li>
+            <li class="carousel__item">
+              <img
+                src="images/header-slider-img-03.jpg"
+                alt="Carousel background image of two technicians working"
+              />
+            </li>
+            <!-- <li class="carousel__item">
+                <img
+                  src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg"
+                  alt=""
+                />
+              </li>
+              <li class="carousel__item">
+                <img
+                  src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg"
+                  alt=""
+                />
+              </li> -->
+          </ul>
+          <!-- <div class="carousel__prev">
+              <label for="carousel-1"></label>
+              <label for="carousel-2"></label>
+              <label for="carousel-3"></label>
+              <label for="carousel-4"></label>
+              <label for="carousel-5"></label>
+            </div>
+            <div class="carousel__next">
+              <label for="carousel-1"></label>
+              <label for="carousel-2"></label>
+              <label for="carousel-3"></label>
+              <label for="carousel-4"></label>
+              <label for="carousel-5"></label>
+            </div> -->
+          <div class="carousel__nav">
+            <label for="carousel-1"></label>
+            <label for="carousel-2"></label>
+            <label for="carousel-3"></label>
+            <!-- <label for="carousel-4"></label>
+              <label for="carousel-5"></label> -->
+          </div>
+        </div>
+
+        <!-- navigation -->
+        <section class="navigation">
           <a href="#">
             <!-- img of logo -->
             <p>Logo</p>
@@ -42,8 +104,8 @@
           </nav>
         </section>
 
+        <!-- banner content -->
         <section class="banner">
-          <!-- banner content -->
           <div class="banner-content">
             <h1>
               We design and fabricate indestructible wastewater screens. Enough
@@ -52,19 +114,16 @@
             <button>View Products</button>
             <button>View Services</button>
           </div>
-          <!-- carousel slider -->
-          <img
-            class="banner-slider"
-            src="images/header-slider-img-01.jpg"
-            alt="banner background slider"
-          />
+
           <!-- banner cover -->
-          <img
-            class="banner-layer"
-            src="images/wave-white.png"
-            aria-hidden="true"
-            alt="A layer of banner cover"
-          />
+          <div class="banner-layer-container">
+            <img
+              class="banner-layer"
+              src="images/wave-white.png"
+              aria-hidden="true"
+              alt="A layer of banner cover"
+            />
+          </div>
         </section>
       </header>
       <main id="site-main">
