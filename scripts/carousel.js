@@ -10,7 +10,7 @@ setTimeout(autoShowSlides, CAROUSEL_DELAY);
 
 function autoShowSlides() {
   activeCarouselIndex++;
-  console.log(activeCarouselIndex);
+  // console.log(activeCarouselIndex);
   radioInputs[activeCarouselIndex].click();
 
   if (activeCarouselIndex === radioInputs.length - 1) {
