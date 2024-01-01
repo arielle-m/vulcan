@@ -24,11 +24,28 @@
     <!-- external -->
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/carousel.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
   </head>
   <body id="#top">
     <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <div class="site-wrapper">
-      <header>
+      <header class="site-header">
+
+      <!-- navigation -->
+        <a href="#">
+          <!-- img of logo -->
+          <a href="#">
+            <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" class="site-logo">
+          </a>
+        </a>
+        <nav>
+          <!-- hamburger menu button & svg -->
+          <button>Hamburger menu button</button>
+
+          <!-- ul of nav links -->
+        </nav>
+      </header>
+      <main id="site-main">
         <!-- The carousel section is modified from https://github.com/dangvanthanh/carousel.sass?tab=readme-ov-file   -->
         <div class="carousel">
           <input
@@ -105,21 +122,7 @@
             <!-- <label for="carousel-4"></label>
             <label for="carousel-5"></label> -->
           </div>
-        </div>
-
-        <!-- navigation -->
-        <section class="navigation">
-          <a href="#">
-            <!-- img of logo -->
-            <p>Logo</p>
-          </a>
-          <nav>
-            <!-- hamburger menu button & svg -->
-            <button>Hamburger menu button</button>
-
-            <!-- ul of nav links -->
-          </nav>
-        </section>
+        </div>        
 
         <!-- banner content -->
         <section class="banner">
@@ -129,8 +132,8 @@
               said.
             </h1>
             <div class="button-container">
-              <button class="view-products"><p>VIEW PRODUCTS</p></button>
-              <button><p>VIEW SERVICES</p></button>
+              <button class="view-products"><p>View Products</p></button>
+              <button><p>View Services</p></button>
             </div>
           </div>
 
@@ -144,8 +147,6 @@
             />
           </div>
         </section>
-      </header>
-      <main id="site-main">
         <section class="products">
           <!-- products / customized per order -->
 
