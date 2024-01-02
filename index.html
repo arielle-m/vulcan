@@ -30,19 +30,31 @@
     <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <div class="site-wrapper">
       <header class="site-header">
-
       <!-- navigation -->
-        <a href="#">
-          <!-- img of logo -->
-          <a href="#">
+        <!-- img of logo -->
+          <a href="#top">
             <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" class="site-logo">
           </a>
-        </a>
-        <nav>
+        <nav class="site-navigation" id="site-navigation">
           <!-- hamburger menu button & svg -->
-          <button>Hamburger menu button</button>
+          <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+              <title>Menu icon</title>
+              <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+          </svg>
+          </button>
 
           <!-- ul of nav links -->
+          <ul class="nav-menu" id="header-menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Parts</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Installation Map</a></li>
+            <li><a href="#">Product Literature</a></li>
+          </ul>
         </nav>
       </header>
       <main id="site-main">
