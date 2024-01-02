@@ -2,7 +2,7 @@
 const radioInputs = document.querySelectorAll(".carousel-dot");
 const labels = document.querySelectorAll(".carousel__nav label");
 
-const CAROUSEL_DELAY = 3000;
+const CAROUSEL_DELAY = 5000;
 
 let activeCarouselIndex = 0;
 let timeoutID;
