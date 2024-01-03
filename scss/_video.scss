@@ -1,4 +1,32 @@
 // Video Styles
 @use "variables" as *;
-// @use "mixins" as *;
+
+.video {
+    background-color: $pri;
+    padding: 5em 7em 5em;
+    margin: 0 auto;
+
+    @media (min-width: $phonePortrait){
+        iframe{
+            height:125px;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: $tabletPortrait){
+        iframe{
+            height:370px;
+            width:686px;
+        }
+    }
+
+    @media (min-width: $desktopMedium){
+        iframe{
+            height:470px;
+            width:800px;
+        }
+    }
+}
+
+
 
