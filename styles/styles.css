@@ -1179,8 +1179,8 @@ header {
 
 .search {
   background-color: #154a66;
-  margin: 0 auto;
-  padding: 0;
+  padding-bottom: 3rem;
+  margin-top: -1px;
 }
 .search h1 {
   margin: 0;
@@ -1194,39 +1194,102 @@ header {
 .search .white-line {
   background-color: #ffffff;
   height: 1px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   width: 90vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 1rem 5vw 1rem 5vw;
 }
 .search form label {
   display: block;
   color: #ffffff;
   text-align: left;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: capitalize;
-  margin-bottom: 0.5rem;
-  margin-left: 5vw;
+  margin: 0 0 0.5rem 5vw;
 }
 .search form select {
+  background-color: #bbbbbb;
+  color: #646464;
   display: block;
+  font-weight: 500;
   width: 90vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
   padding: 0.5rem;
-  margin-bottom: 1.2rem;
+  margin: 0 5vw 1.2rem 5vw;
 }
-.search form input {
+.search form select:focus {
+  background-color: #ffffff;
+}
+.search form input[type=submit] {
   display: block;
   background-color: #429bd6;
   color: #ffffff;
   text-transform: uppercase;
   width: 90vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
   padding: 0.7rem;
+  margin: 2.8rem 5vw 0 5vw;
+}
+.search form option {
+  color: #646464;
+  font-weight: 500;
+}
+
+.about {
+  background-image: url(/images/bg-section-about-us.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.about h2 {
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 10rem 2rem 0rem;
+  line-height: 1.8rem;
+}
+.about p {
+  color: #ffffff;
+  margin: 0 auto;
+  line-height: 0.9rem;
+  font-size: 0.8rem;
+  padding: 1.5rem 3rem 1rem;
+}
+.about button {
+  background-color: transparent;
+  border: 1.7px solid #ffffff;
+  color: #ffffff;
+  padding: 0.7rem 0.7rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 2em 0em 5em;
+  padding: 0.6em 1.8em;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+@media (min-width: 53.125em) {
+  .about h2 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    padding: 6rem 3rem 1rem;
+  }
+  .about p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    padding: 2em 9em 3em;
+  }
+  .about button {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 78.1875em) {
+  .about h2 {
+    padding: 2.5em 7em 1em;
+    font-size: 2.8em;
+  }
+  .about p {
+    font-size: 0.8em;
+    padding: 1em 24em 1em;
+  }
+  .about button {
+    font-size: 0.8em;
+    padding: 0.7em 3.8em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

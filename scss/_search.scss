@@ -4,6 +4,8 @@
 
 .search {
     background-color: $pri-da;
+    padding-bottom: 3rem;
+    margin-top: -1px;
     h1 {
         margin: 0;
         padding: 0;
@@ -13,16 +15,11 @@
         margin: 0.2rem 0 0 0;
         color: $light;
     }
-    margin: 0 auto;
-    padding: 0;
     .white-line {
         background-color: $light;
         height: 1px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
         width: 90vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin: 1rem 5vw 1rem 5vw;
     }
     form {
         label {
@@ -30,18 +27,21 @@
             color: $light;
             text-align: left;
             font-size: 0.8rem;
-            font-weight: $bold;
+            font-weight: 800;
             text-transform: capitalize;
-            margin-bottom: 0.5rem;
-            margin-left: 5vw;
+            margin: 0 0 0.5rem 5vw;
         }
         select {
+            background-color: #bbbbbb;
+            color: #646464;
             display: block;
+            font-weight: $medium;
             width: 90vw;
-            margin-left: 5vw;
-            margin-right: 5vw;
             padding: 0.5rem;
-            margin-bottom: 1.2rem;
+            margin: 0 5vw 1.2rem 5vw;
+        }
+        select:focus {
+            background-color: $light;
         }
         input[type="submit"] {
             display: block;
@@ -49,10 +49,12 @@
             color: $light;
             text-transform: uppercase;
             width: 90vw;
-            margin-left: 5vw;
-            margin-right: 5vw;
             padding: 0.7rem;
-            margin-bottom: 1.2rem;
+            margin: 2.8rem 5vw 0 5vw;
+        }
+        option {
+            color: #646464;
+            font-weight: $medium;
         }
     }
 }
