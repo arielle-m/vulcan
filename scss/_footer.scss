@@ -1,3 +1,64 @@
 // Footer Styles
 @use "variables" as *;
 // @use "mixins" as *;
+
+.footer {
+  background-image: url("../images/wave-blue-light.png");
+  color: $light;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  a {
+    color: $light;
+    &:hover {
+      color: $light;
+    }
+  }
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  img {
+    width: 100px;
+  }
+}
+
+.footer-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    li {
+      margin: 0 10px;
+      list-style: none;
+      a {
+        color: $light;
+        &:hover {
+          color: $light;
+        }
+      }
+    }
+}
+
+.social-icon {
+    width: 30px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    filter: contrast(0) brightness(200%);
+}
+
+.footer-menu ul li a {
+    font-size: 10px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
