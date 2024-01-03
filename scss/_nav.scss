@@ -1,13 +1,13 @@
 // Navigation Bar & Header Styles
 @use "variables" as *;
-// @use "mixins" as *;
+@use "mixins" as *;
 
 header {
   position: relative;
 }
 
 .site-header {
-  background-color: #{$gray3}b5;
+  background-color: #{$gray4}b5;
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -20,24 +20,21 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  // 850px
-  @media (min-width: $tabletPortrait) {
-    height: 9.5em;
-  }
   // 1251px:(.55')
-  @media (min-width: $desktopMedium) {
-    height: 11.5em;
+  @include mq($desktopMedium) {
+    height: 11.5rem;
   }
 
   // 1538px:(.56')
-  @media (min-width: 96.1em) {
-    height: 20.5em;
+  @include mq(96.1em) {
+    height: 20.5rem;
   }
   // 1850px:(.57')
-  @media (min-width: 115.625em) {
-    height: 22em;
+  @include mq(115.625em) {
+    height: 22rem;
   }
 }
+
 
 // site logo
 .site-logo {
@@ -48,6 +45,7 @@ header {
 a.site-logo {
   line-height: 0;
 }
+
 
 // menu button
 .menu-toggle {
@@ -87,6 +85,7 @@ a.site-logo {
   width: 0;
 }
 
+
 // site navigation
 // .site-navigation {
   // grid-column: 2/3;
@@ -123,9 +122,12 @@ a.site-logo {
   font-size: 1.125rem;
   text-decoration: none;
   color: $light;
-  background-color: #{$gray3}b5;
+  background-color: #{$gray4}b5;
   font-weight: $regular;
   text-align: left;
+
+
+  
 }
 
 /* navigation links */
@@ -137,4 +139,93 @@ nav a:active {
 
 nav a:focus {
   border: 0.125rem solid $pri-da;
+}
+
+.header-contact {
+  display: none;
+}
+
+// 850px
+@include mq($tabletPortrait) {
+  .site-header {
+    height: 9.5rem; // 850px
+    background-color: transparent;
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-navigation ul {
+    display: flex;
+    position: static;
+    grid-row: 2/3;
+  }
+
+  
+
+  .site-navigation a {
+    font-size: 0.8625rem;
+    padding: 0.75rem 2.75rem;
+  }
+
+  .site-navigation ul li:nth-of-type(7),
+  .site-navigation ul li:nth-of-type(8) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .site-navigation ul li:nth-of-type(7) a,
+  .site-navigation ul li:nth-of-type(8) a {
+    background-color: transparent;
+    font-size: 1.25rem;
+  }
+
+  .site-logo {
+    width: 8rem;
+    grid-row: 1/2;
+    justify-content: center;
+  }
+
+  .header-contact{
+    display: flex;
+    grid-row: 1/2;
+    justify-content: end;
+  }
+
+  .header-contact a{
+    display: block;
+    font-family: $heading-font;
+    text-transform: uppercase;
+    padding: 0.125rem 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: $light;
+    font-weight: $regular;
+    text-align: left;
+  }
+
+}
+// 1251px:(.55')
+@include mq($desktopMedium) {
+  // .site-navigation a {
+  //   height: 11.5rem;
+  // }
+}
+
+// 1538px:(.56')
+@include mq(96.1em) {
+  // .site-navigation a {
+  //   height: 20.5rem;
+  // }
+}
+// 1850px:(.57')
+@include mq(115.625em) {
+  // .site-navigation a {
+  //   height: 22rem;
+  // }
 }

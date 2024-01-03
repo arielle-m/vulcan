@@ -10,6 +10,7 @@ $light: #ffffff;
 $gray1: #bababa;
 $gray2: #737373;
 $gray3: #616161;
+$gray4: #424242;
 $dark: #1f1f1f;
 
 
@@ -34,6 +35,7 @@ $bg-color-dark: $brand-color-dark;
 // Fonts
 $body-font: "Roboto", Arial, Helvetica, Verdana, sans-serif;
 $heading-font: "Roboto Condensed", Arial, Helvetica, Verdana, sans-serif;
+$icon-font: "fontello", Arial, Helvetica, Verdana, sans-serif;
 
 // Font Weights
 $regular: 400;
@@ -82,6 +84,7 @@ $six-col: colWidth(6);
 
 
 // Media Query Breakpoints
+$desktopLarge: em(1920);
 $desktopMedium: em(1251);
 $tabletLandscape: em(1024);
 $tabletPortrait: em(850);
