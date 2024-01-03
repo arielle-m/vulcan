@@ -1359,6 +1359,30 @@ header {
   }
 }
 
+.video {
+  background-color: #439bd5;
+  padding: 5em 7em 5em;
+  margin: 0 auto;
+}
+@media (min-width: 26.25em) {
+  .video iframe {
+    height: 125px;
+    width: 100%;
+  }
+}
+@media (min-width: 53.125em) {
+  .video iframe {
+    height: 370px;
+    width: 686px;
+  }
+}
+@media (min-width: 78.1875em) {
+  .video iframe {
+    height: 470px;
+    width: 800px;
+  }
+}
+
 .vulcan-install {
   background-image: url("../images/map.jpg");
   color: #ffffff;
