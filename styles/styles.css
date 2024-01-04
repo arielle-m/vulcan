@@ -1415,6 +1415,12 @@ header {
 .email {
   padding: 0.5em 5em 0.5em 0.5em;
   border-style: none;
+  margin-bottom: 0.9em;
+}
+@media (min-width: 53.125em) {
+  .email {
+    margin-bottom: 0em;
+  }
 }
 
 .submit {
@@ -1433,14 +1439,15 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 80px 0;
 }
 .vulcan-install a {
   color: #ffffff;
 }
-.vulcan-install h1 {
+.vulcan-install h2 {
   font-size: 1.5em;
   font-weight: 700;
+  padding: 0 10vw;
   margin-bottom: 20px;
   color: #504f4f;
 }
@@ -1452,7 +1459,7 @@ header {
   cursor: pointer;
   text-transform: uppercase;
   color: #504f4f;
-  border: 1px solid #504f4f;
+  border: 1px solid black;
   margin: 0 0 20px 0;
   padding: 0.6em 1.8em;
   font-size: 0.9em;
@@ -1464,7 +1471,7 @@ header {
   color: #ffffff;
   padding-top: 10px;
 }
-.contact h1 {
+.contact h2 {
   font-size: 1.5em;
   font-weight: 700;
   color: #ffffff;

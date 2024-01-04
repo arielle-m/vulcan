@@ -9,20 +9,21 @@
     background-position: center center;
 
     color: $light;
-    padding: 20px 0;
+    padding: 80px 0;
     a {
         color: $light;
     }
-    h1 {
+    h2 {
         font-size: 1.5em;
         font-weight: $bold;
+        padding: 0 10vw;
         margin-bottom: 20px;
         color: #504f4f;
     }
     button {
         @include btn;
         color: #504f4f;
-        border: 1px solid #504f4f; 
+        border: 1px solid black; 
         margin: 0 0 20px 0;
         padding: 0.6em 1.8em;
         font-size: 0.9em;
@@ -34,7 +35,7 @@
     background-color: $pri-da;
     color: $light;
     padding-top: 10px;
-    h1 {
+    h2 {
         font-size: 1.5em;
         font-weight: $bold;
         color: $light;
