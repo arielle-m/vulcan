@@ -58,17 +58,9 @@
     }
   }
   @media (min-width: $tabletPortrait) {
-    form {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .form-group {
-      flex: 1 1 50%;
-      box-sizing: border-box;
-      padding: 0 10px;
-    }
+    
   }
   @media (min-width: $desktopMedium) {
-    
+
   }
 }

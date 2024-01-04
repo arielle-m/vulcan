@@ -1298,17 +1298,6 @@ header {
   color: #646464;
   font-weight: 500;
 }
-@media (min-width: 53.125em) {
-  .search form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .search .form-group {
-    flex: 1 1 50%;
-    box-sizing: border-box;
-    padding: 0 10px;
-  }
-}
 .about {
   background-image: url(/images/bg-section-about-us.jpg);
   background-size: cover;
