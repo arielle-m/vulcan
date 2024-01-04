@@ -32,6 +32,10 @@
 .email{ 
     padding: 0.5em 5em 0.5em 0.5em;
     border-style:none;
+    margin-bottom: 0.9em;
+    @media (min-width: $tabletPortrait){
+        margin-bottom: 0em;
+    }
 }
 
 .submit{
