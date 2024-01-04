@@ -2,3 +2,44 @@
 @use "variables" as *;
 // @use "mixins" as *;
 
+.newsletter{
+    background-color: $pri-li;
+    padding: 0.4em;
+    
+    p{
+        font-size: 1.25em;
+        color: $pri-da;
+        @media (min-width: $tabletPortrait){
+            margin-right: 1em;
+        }
+    }
+    @media (min-width: $tabletPortrait){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form{
+        @media (min-width: $tabletPortrait){
+            display:flex;
+            align-content: center;
+            align-items: center;
+            padding-top: 2em;
+        }
+    }
+}
+
+
+.email{ 
+    padding: 0.5em 5em 0.5em 0.5em;
+    border-style:none;
+}
+
+.submit{
+    text-transform: uppercase;
+    background-color: $pri;
+    color: white;
+    border-style: none;
+    padding: 0.5em 1.8em 0.5em 1.8em;
+    font-weight: $bold;
+    margin: 0 0.2em;
+}
