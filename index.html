@@ -1,113 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vulcan - The Proven Screen Choice</title>
-    <meta
-      name="description"
-      content="We design and fabricate indestructible wastewater screens. Enough said."
-    />
 
-    <!-- favicon -->
-    <!-- TODO: add other favicon sizes? -->
-    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vulcan - The Proven Screen Choice</title>
+  <meta name="description" content="We design and fabricate indestructible wastewater screens. Enough said." />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+  <!-- favicon -->
+  <!-- TODO: add other favicon sizes? -->
+  <link rel="icon" href="favicon/favicon.ico" sizes="any" />
 
-    <!-- external -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="scripts/carousel.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
-  </head>
-  <body id="#top">
-    <a href="#site-main" class="screen-reader-text">Skip to content</a>
-    <div class="site-wrapper">
-      <header class="site-header">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- external -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/carousel.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+</head>
+
+<body id="#top">
+  <a href="#site-main" class="screen-reader-text">Skip to content</a>
+  <div class="site-wrapper">
+    <header class="site-header">
       <!-- navigation -->
-        <!-- img of logo -->
-          <a href="#top">
-            <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" class="site-logo">
-          </a>
-          <div class="header-contact">
-            <p><a href="#">+1 715-642-2755</a></p>
-            <p><a href="#">Contact us</a></p>
-          </div>
-        <!-- nav -->
-        <nav class="site-navigation" id="site-navigation">
-          <!-- hamburger menu button & svg -->
-          <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-              <title>Menu icon</title>
-              <path d="M2 7h20"></path>
-              <path d="M2 12h20"></path>
-              <path d="M2 17h20"></path>
+      <!-- img of logo -->
+      <a href="#top">
+        <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" class="site-logo">
+      </a>
+      <div class="header-contact">
+        <p><a href="#">+1 715-642-2755</a></p>
+        <p><a href="#">Contact us</a></p>
+      </div>
+      <!-- nav -->
+      <nav class="site-navigation" id="site-navigation">
+        <!-- hamburger menu button & svg -->
+        <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+            <title>Menu icon</title>
+            <path d="M2 7h20"></path>
+            <path d="M2 12h20"></path>
+            <path d="M2 17h20"></path>
           </svg>
-          </button>
+        </button>
 
-          <!-- ul of nav links -->
-          <ul class="nav-menu" id="header-menu">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Parts</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Installation Map</a></li>
-            <li><a href="#">Product Literature</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main id="site-main">
-        <!-- The carousel section is modified from https://github.com/dangvanthanh/carousel.sass?tab=readme-ov-file   -->
-        <div class="carousel">
-          <input
-            type="radio"
-            id="carousel-1"
-            class="carousel-dot"
-            name="carousel[]"
-            checked
-          />
-          <input
-            type="radio"
-            id="carousel-2"
-            class="carousel-dot"
-            name="carousel[]"
-          />
-          <input
-            type="radio"
-            id="carousel-3"
-            class="carousel-dot"
-            name="carousel[]"
-          />
-          <!-- <input type="radio" id="carousel-4" name="carousel[]" />
+        <!-- ul of nav links -->
+        <ul class="nav-menu" id="header-menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Parts</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Installation Map</a></li>
+          <li><a href="#">Product Literature</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="site-main">
+      <!-- The carousel section is modified from https://github.com/dangvanthanh/carousel.sass?tab=readme-ov-file   -->
+      <div class="carousel">
+        <input type="radio" id="carousel-1" class="carousel-dot" name="carousel[]" checked />
+        <input type="radio" id="carousel-2" class="carousel-dot" name="carousel[]" />
+        <input type="radio" id="carousel-3" class="carousel-dot" name="carousel[]" />
+        <!-- <input type="radio" id="carousel-4" name="carousel[]" />
           <input type="radio" id="carousel-5" name="carousel[]" /> -->
-          <ul class="carousel__items">
-            <li class="carousel__item">
-              <img
-                src="images/header-slider-img-01.jpg"
-                alt="Carousel background image of a machine"
-              />
-            </li>
-            <li class="carousel__item">
-              <img
-                src="images/header-slider-img-02.jpg"
-                alt="Carousel background image of a technician working"
-              />
-            </li>
-            <li class="carousel__item">
-              <img
-                src="images/header-slider-img-03.jpg"
-                alt="Carousel background image of two technicians working"
-              />
-            </li>
-            <!-- <li class="carousel__item">
+        <ul class="carousel__items">
+          <li class="carousel__item">
+            <img src="images/header-slider-img-01.jpg" alt="Carousel background image of a machine" />
+          </li>
+          <li class="carousel__item">
+            <img src="images/header-slider-img-02.jpg" alt="Carousel background image of a technician working" />
+          </li>
+          <li class="carousel__item">
+            <img src="images/header-slider-img-03.jpg" alt="Carousel background image of two technicians working" />
+          </li>
+          <!-- <li class="carousel__item">
               <img
                 src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg"
                 alt=""
@@ -119,155 +92,130 @@
                 alt=""
               />
             </li> -->
-          </ul>
-          <div class="carousel__prev">
-            <label for="carousel-1"></label>
-            <label for="carousel-2"></label>
-            <label for="carousel-3"></label>
-            <!-- <label for="carousel-4"></label>
+        </ul>
+        <div class="carousel__prev">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+          <!-- <label for="carousel-4"></label>
             <label for="carousel-5"></label> -->
-          </div>
-          <div class="carousel__next">
-            <label for="carousel-1"></label>
-            <label for="carousel-2"></label>
-            <label for="carousel-3"></label>
-            <!-- <label for="carousel-4"></label>
+        </div>
+        <div class="carousel__next">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+          <!-- <label for="carousel-4"></label>
             <label for="carousel-5"></label> -->
-          </div>
-          <div class="carousel__nav">
-            <label for="carousel-1"></label>
-            <label class="carousel-label" for="carousel-2"></label>
-            <label for="carousel-3"></label>
-            <!-- <label for="carousel-4"></label>
+        </div>
+        <div class="carousel__nav">
+          <label for="carousel-1"></label>
+          <label class="carousel-label" for="carousel-2"></label>
+          <label for="carousel-3"></label>
+          <!-- <label for="carousel-4"></label>
             <label for="carousel-5"></label> -->
-          </div>
-        </div>        
+        </div>
+      </div>
 
-        <!-- banner content -->
-        <section class="banner">
-          <div class="banner-content">
-            <h1>
-              We design and fabricate indestructible wastewater screens. Enough
-              said.
-            </h1>
-            <div class="button-container">
-              <button class="view-products"><p>View Products</p></button>
-              <button><p>View Services</p></button>
-            </div>
+      <!-- banner content -->
+      <section class="banner">
+        <div class="banner-content">
+          <h1>
+            We design and fabricate indestructible wastewater screens. Enough
+            said.
+          </h1>
+          <div class="button-container">
+            <button class="view-products">
+              <p>View Products</p>
+            </button>
+            <button>
+              <p>View Services</p>
+            </button>
           </div>
+        </div>
 
-          <!-- banner cover -->
-          <div class="banner-layer-container">
-            <img
-              class="banner-layer"
-              src="images/wave-white.png"
-              aria-hidden="true"
-              alt="A layer of banner cover"
-            />
-          </div>
-        </section>
-        <section class="products">
-          <!-- products / customized per order -->
-
-          <h2>Customized per order</h2>
-          <p class="product-description">
-            Just as no two treatment plants are the same, no two of our
-            screening, grit handling or sludge thickening products are either.
-            We&#8217;ll help determine exactly what you need.
-          </p>
-          <article class="products-list">
-            <div class="machine01-img">
-              <img
-                class="products-list-margin"
-                src="images/machine-01-300x274.png"
-                alt="An image of a machine"
-                srcset="
+        <!-- banner cover -->
+        <div class="banner-layer-container">
+          <img class="banner-layer" src="images/wave-white.png" aria-hidden="true" alt="A layer of banner cover" />
+        </div>
+      </section>
+      <section class="products">
+        <!-- products / customized per order -->
+        <h2>Customized per order</h2>
+        <p class="product-description">
+          Just as no two treatment plants are the same, no two of our
+          screening, grit handling or sludge thickening products are either.
+          We&#8217;ll help determine exactly what you need.
+        </p>
+        <article class="products-list">
+          <div class="machine01-img">
+            <img class="products-list-margin" src="images/machine-01-300x274.png" alt="An image of a machine" srcset="
                   images/machine-01-912x834.png 912w,
                   images/machine-01-768x702.png 768w,
                   images/machine-01-300x274.png 300w
-                "
-              />
-            </div>
-            <div class="machine01-heading machine-heading">
-              <h3>Screening</h3>
-            </div>
-            <a href="#" class="product-view-selection product-view01"
-              ><p>View Selection</p></a
-            >
+                " />
+          </div>
+          <div class="machine01-heading machine-heading">
+            <h3>Screening</h3>
+          </div>
+          <a href="#" class="product-view-selection product-view01">
+            <p>View Selection</p>
+          </a>
 
-            <div class="machine02-img">
-              <img
-                class="products-list-margin"
-                src="images/machine-02-300x274.png"
-                alt="An image of a machine"
-                srcset="
+          <div class="machine02-img">
+            <img class="products-list-margin" src="images/machine-02-300x274.png" alt="An image of a machine" srcset="
                   images/machine-02-912x834.png 912w,
                   images/machine-02-768x702.png 768w,
                   images/machine-02-300x274.png 300w
-                "
-              />
-            </div>
-            <div class="machine02-heading machine-heading">
-              <h3>Screenings <br />Handling</h3>
-            </div>
-            <a href="#" class="product-view-selection product-view02"
-              ><p>View Selection</p></a
-            >
+                " />
+          </div>
+          <div class="machine02-heading machine-heading">
+            <h3>Screenings <br />Handling</h3>
+          </div>
+          <a href="#" class="product-view-selection product-view02">
+            <p>View Selection</p>
+          </a>
 
-            <div class="machine03-img">
-              <img
-                class="products-list-margin"
-                src="images/machine-03-300x274.png"
-                alt="An image of a machine"
-                srcset="
+          <div class="machine03-img">
+            <img class="products-list-margin" src="images/machine-03-300x274.png" alt="An image of a machine" srcset="
                   images/machine-03-912x834.png 912w,
                   images/machine-03-768x702.png 768w,
                   images/machine-03-300x274.png 300w
-                "
-              />
-            </div>
-            <div class="machine03-heading machine-heading">
-              <h3>Grit <br />Handling</h3>
-            </div>
-            <a href="#" class="product-view-selection product-view03"
-              ><p>View Selection</p></a
-            >
+                " />
+          </div>
+          <div class="machine03-heading machine-heading">
+            <h3>Grit <br />Handling</h3>
+          </div>
+          <a href="#" class="product-view-selection product-view03">
+            <p>View Selection</p>
+          </a>
 
-            <div class="machine04-img">
-              <img
-                class="products-list-margin"
-                src="images/machine-04-300x274.png"
-                alt="An image of a machine"
-                srcset="
+          <div class="machine04-img">
+            <img class="products-list-margin" src="images/machine-04-300x274.png" alt="An image of a machine" srcset="
                   images/machine-04-912x834.png 912w,
                   images/machine-04-768x702.png 768w,
                   images/machine-04-300x274.png 300w
-                "
-              />
-            </div>
-            <div class="machine04-heading machine-heading">
-              <h3>Sludge <br />Thickening</h3>
-            </div>
-            <a href="#" class="product-view-selection product-view04"
-              ><p>View Selection</p></a
-            >
-          </article>
-          <!-- products cover -->
-          <div class="products-layer-container">
-            <img
-              class="products-layer"
-              src="images/wave-blue-dark.png"
-              aria-hidden="true"
-              alt="A layer of banner cover"
-            />
+                " />
           </div>
-        </section>
-        <section class="search">
-          <!-- search / product advisor -->
-          <h1>product advisor</h1>
-          <p>Find your project's perfect fit.</p>
-          <div class="white-line"></div>
-          <form>
+          <div class="machine04-heading machine-heading">
+            <h3>Sludge <br />Thickening</h3>
+          </div>
+          <a href="#" class="product-view-selection product-view04">
+            <p>View Selection</p>
+          </a>
+        </article>
+        <!-- products cover -->
+        <div class="products-layer-container">
+          <img class="products-layer" src="images/wave-blue-dark.png" aria-hidden="true"
+            alt="A layer of banner cover" />
+        </div>
+      </section>
+      <section class="search">
+        <!-- search / product advisor -->
+        <h1>product advisor</h1>
+        <p>Find your project's perfect fit.</p>
+        <div class="white-line"></div>
+        <form>
+          <div class="form-group">
             <label for="product-type">product type</label>
             <select name="product-type" id="product-type">
               <option value="select">Select</option>
@@ -276,6 +224,8 @@
               <option value="grit-handling">Grit Handling</option>
               <option value="sludge-thickening">Sludge Thickening</option>
             </select>
+          </div>
+          <div class="form-group">
             <label for="screen-location">screen location</label>
             <select name="screen-location" id="screen-location">
               <option value="select">Select</option>
@@ -283,12 +233,16 @@
               <option value="intermediate">Intermediate</option>
               <option value="final">Final</option>
             </select>
+          </div>
+          <div class="form-group">
             <label for="flow-type">flow type</label>
             <select name="flow-type" id="flow-type">
               <option value="select">Select</option>
               <option value="municipal">Municipal</option>
               <option value="industrial">Industrial</option>
             </select>
+          </div>
+          <div class="form-group">
             <label for="channel-depth">channel depth</label>
             <select name="channel-depth" id="channel-depth">
               <option value="select">Select</option>
@@ -303,6 +257,8 @@
               <option value="80-90">80-90</option>
               <option value="90-100">90-100</option>
             </select>
+          </div>
+          <div class="form-group">
             <label for="channel-width">channel width</label>
             <select name="channel-width" id="channel-width">
               <option value="select">Select</option>
@@ -317,64 +273,64 @@
               <option value="80-90">80-90</option>
               <option value="90-100">90-100</option>
             </select>
-            <input type="submit" value="find my product" />
-          </form>
-        </section>
-        <section class="about">
-          <h2>Delivering Clean, safe water since 1975. Refreshing Indeed.</h2>
-          <p>Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900 cities and communities throughout the world.</p>
-          <button>About Us</button>
-          <!-- about -->
-        </section>
-        <section class="video">      
-          <iframe src="https://player.vimeo.com/video/183929811" frameborder="0" style="border: 15px solid #154a66;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>    
-          <!-- video -->
+          </div>
+          <input type="submit" value="find my product" />
+        </form>
+      </section>
+      <section class="about">
+        <h2>Delivering Clean, safe water since 1975. Refreshing Indeed.</h2>
+        <p>Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900
+          cities and communities throughout the world.</p>
+        <button>About Us</button>
+        <!-- about -->
+      </section>
+      <section class="video">
+        <iframe src="https://player.vimeo.com/video/183929811" frameborder="0" style="border: 15px solid #154a66;"
+          webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        <!-- video -->
 
+      </section>
+      <section class="newsletter">
+        <p>Stay in the know. Sign up for our newsletter.</p>
+        <form>
+          <input type="email" class="email" placeholder="Enter your email">
+          <input type="submit" class="submit">
+        </form>
+
+        <!-- newsletter -->
+      </section>
+      <div class="contact-wrapper">
+        <section class="vulcan-install">
+          <!-- find a vulcan install -->
+          <h2>Installed in a city near you</h2>
+          <button>find a vulcan install</button>
         </section>
-        <section class="newsletter">
-          <p>Stay in the know. Sign up for our newsletter.</p>
-          <form>
-            <input type="email" class="email" placeholder="Enter your email">
-            <input type="submit" class="submit">
-          </form>
-          
-          <!-- newsletter -->
+        <section class="contact">
+          <h2>ready to spec vulcan for your project</h2>
+          <button>contact us</button>
         </section>
-        <div class="contact-wrapper">
-          <section class="vulcan-install">
-            <!-- find a vulcan install -->
-            <h2>Installed in a city near you</h2>
-            <button>find a vulcan install</button>
-          </section>
-          <section class="contact">
-              <h2>ready to spec vulcan for your project</h2>
-              <button>contact us</button>
-          </section>
-        </div>
-      </main>
       </div>
-      <div class="footer-wave-container">
-        <img
-          class="footer-wave-img"
-          src="images/wave-blue-light.png"
-          aria-hidden="true"
-          alt="footer layer"
-        />
-      </div>
-      <footer class="footer">
-          <div class="footer-logo">
-            <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" />
-          </div>
-          <div class="footer-menu">
-            <ul>
-              <li><a href="#"><img class="social-icon" src="images/icon-white-facebook.png" alt="Facebook logo" /></a></li>
-              <li><a href="#"><img class="social-icon" src="images/icon-white-linkedin.png" alt="LinkedIn logo" /></a></li>
-              <li><a href="#"><img class="contact-icon" src="images/icon-phone.png" alt="Phone logo" />+1 712-642-2755</a></li>
-              <li><a href="#"><img class="contact-icon" src="images/icon-email.png" alt="Email logo" />contact us</a></li>
-            </ul>
-          </div>
-          <p>copyright 2017. all rights reserved</p>
-      </footer>
+    </main>
+  </div>
+  <div class="footer-wave-container">
+    <img class="footer-wave-img" src="images/wave-blue-light.png" aria-hidden="true" alt="footer layer" />
+  </div>
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" />
     </div>
-  </body>
+    <div class="footer-menu">
+      <ul>
+        <li><a href="#"><img class="social-icon" src="images/icon-white-facebook.png" alt="Facebook logo" /></a></li>
+        <li><a href="#"><img class="social-icon" src="images/icon-white-linkedin.png" alt="LinkedIn logo" /></a></li>
+        <li><a href="#"><img class="contact-icon" src="images/icon-phone.png" alt="Phone logo" />+1 712-642-2755</a>
+        </li>
+        <li><a href="#"><img class="contact-icon" src="images/icon-email.png" alt="Email logo" />contact us</a></li>
+      </ul>
+    </div>
+    <p>copyright 2017. all rights reserved</p>
+  </footer>
+  </div>
+</body>
+
 </html>
