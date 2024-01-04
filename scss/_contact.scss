@@ -16,18 +16,26 @@
       color: $light;
     }
   }
-  h2 {
-    font-size: 20px;
+  h1 {
     font-weight: $bold;
     margin-bottom: 20px;
-    color: $dark;
+    color: #504f4f;
+  }
+  button {
+    @include btn;
+    color: #504f4f;
+    border: 1px solid #504f4f; 
+    margin: 0 0 20px 0;
+    padding: 0.6em 1.8em;
+    font-size: 0.9em;
+    font-weight: $bold;
   }
 }
 
 .contact {
-    background-image: url("../images/wave-blue-dark.png");
+    background-color: $pri-da;
     color: $light;
-    padding: 20px 0;
+    padding-top: 10px;
     text-align: center;
     font-size: 14px;
     font-weight: 300;
@@ -38,10 +46,24 @@
         color: $light;
         }
     }
-    h2 {
-        font-size: 20px;
+    h1 {
         font-weight: $bold;
         color: $light;
         margin: 1rem 20vw 0.5rem 20vw;
+    }
+    button {
+        @include btn;
+        margin: 1rem auto 2rem auto;
+        padding: 0.6em 1.8em;
+        font-size: 0.9em;
+        font-weight: $bold;
+    }
+    .footer-layer-container {
+        margin-bottom: -8px;
+        .footer-wave-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
