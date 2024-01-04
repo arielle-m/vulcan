@@ -5,7 +5,7 @@
 .footer {
     background-color: #009ddc;
     color: $light;
-    padding-bottom: 1rem;
+    padding-bottom: 1px;
     text-align: center;
     font-size: 14px;
     font-weight: 300;
@@ -17,7 +17,7 @@
     }
     }
     .footer-logo {
-        margin-bottom: 20px;
+        margin-bottom: 1rem;
         img {
           width: 100px;
         }
@@ -50,6 +50,7 @@
     }
     .social-icon {
         width: 30px;
+        height: 30px;
     }
     .contact-icon {
         width: 20px;

@@ -1383,22 +1383,63 @@ header {
   }
 }
 
+.newsletter {
+  background-color: #bddbee;
+  padding: 0.4em;
+}
+.newsletter p {
+  font-size: 1.25em;
+  color: #154a66;
+}
+@media (min-width: 53.125em) {
+  .newsletter p {
+    margin-right: 1em;
+  }
+}
+@media (min-width: 53.125em) {
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 53.125em) {
+  .newsletter .form {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-top: 2em;
+  }
+}
+
+.email {
+  padding: 0.5em 5em 0.5em 0.5em;
+  border-style: none;
+}
+
+.submit {
+  text-transform: uppercase;
+  background-color: #439bd5;
+  color: white;
+  border-style: none;
+  padding: 0.5em 1.8em 0.5em 1.8em;
+  font-weight: 700;
+  margin: 0 0.2em;
+}
+
 .vulcan-install {
-  background-image: url("../images/map.jpg");
+  background-image: url(/images/map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   color: #ffffff;
   padding: 20px 0;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.5;
 }
 .vulcan-install a {
   color: #ffffff;
 }
-.vulcan-install a:hover {
-  color: #ffffff;
-}
 .vulcan-install h1 {
+  font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 20px;
   color: #504f4f;
@@ -1422,21 +1463,12 @@ header {
   background-color: #154a66;
   color: #ffffff;
   padding-top: 10px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.5;
-}
-.contact a {
-  color: #ffffff;
-}
-.contact a:hover {
-  color: #ffffff;
 }
 .contact h1 {
+  font-size: 1.5em;
   font-weight: 700;
   color: #ffffff;
-  margin: 1rem 20vw 0.5rem 20vw;
+  margin: 2rem 20vw 0.5rem 20vw;
 }
 .contact button {
   background-color: transparent;
@@ -1451,7 +1483,7 @@ header {
   font-weight: 700;
 }
 .contact .footer-layer-container {
-  margin-bottom: -8px;
+  margin-bottom: -1rem;
 }
 .contact .footer-layer-container .footer-wave-img {
   width: 100%;
@@ -1462,7 +1494,7 @@ header {
 .footer {
   background-color: #009ddc;
   color: #ffffff;
-  padding-bottom: 1rem;
+  padding-bottom: 1px;
   text-align: center;
   font-size: 14px;
   font-weight: 300;
@@ -1475,7 +1507,7 @@ header {
   color: #ffffff;
 }
 .footer .footer-logo {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .footer .footer-logo img {
   width: 100px;
@@ -1508,6 +1540,7 @@ header {
 }
 .footer .social-icon {
   width: 30px;
+  height: 30px;
 }
 .footer .contact-icon {
   width: 20px;
