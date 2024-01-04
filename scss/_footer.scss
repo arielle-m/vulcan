@@ -2,20 +2,16 @@
 @use "variables" as *;
 // @use "mixins" as *;
 
+.footer-wave-container {
+  z-index: 1;
+  position: relative;
+  top: -2rem;
+}
+
 .footer {
-    background-color: #009ddc;
-    color: $light;
+    background-color: $pri;
+    margin-top: -2.4rem;
     padding-bottom: 1px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5;
-    a {
-        color: $light;
-    &:hover {
-        color: $light;
-    }
-    }
     .footer-logo {
         margin-bottom: 1rem;
         img {
@@ -32,9 +28,6 @@
           list-style: none;
           a {
             color: $light;
-            &:hover {
-              color: $light;
-            }
           }
         }
     }
@@ -45,7 +38,6 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 5px;
     }
     .social-icon {
@@ -56,5 +48,11 @@
         width: 20px;
         height: 20px;
         filter: contrast(0) brightness(200%);
+    }
+    p {
+        font-size: 10px;
+        font-weight: $medium;
+        text-transform: uppercase;
+        color: $light;
     }
 }
