@@ -18,8 +18,8 @@
   .white-line {
     background-color: $light;
     height: 1px;
-    width: 90vw;
-    margin: 1rem 5vw 1rem 5vw;
+    width: 90%;
+    margin: 1rem 5%;
   }
   form {
     label {
@@ -36,7 +36,7 @@
       color: #646464;
       display: block;
       font-weight: $medium;
-      width: 90vw;
+      width: 90%;
       padding: 0.5rem;
       margin: 0 5vw 1.2rem 5vw;
     }
@@ -46,11 +46,12 @@
     input[type="submit"] {
       display: block;
       background-color: #429bd6;
+      border: none;
       color: $light;
       text-transform: uppercase;
-      width: 90vw;
+      width: 90%;
       padding: 0.7rem;
-      margin: 2.8rem 5vw 0 5vw;
+      margin: 2.8rem 5% 0 5%;
     }
     option {
       color: #646464;
@@ -58,9 +59,35 @@
     }
   }
   @media (min-width: $tabletPortrait) {
-    
+    p {
+      color: $pri;
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      select {
+        width: 80%;
+      }
+      input[type="submit"] {
+        width: 100%
+      }
+      .form-group {
+        width: 50%;
+      }
+    }
   }
   @media (min-width: $desktopMedium) {
-
+    form {
+      justify-content: flex-start;
+      gap: 2.5%;
+      select {
+        width: 100%;
+      }
+      .form-group {
+        width: 16%;
+      }
+    }
   }
 }
