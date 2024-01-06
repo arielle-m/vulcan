@@ -31,6 +31,17 @@ $bg-color-dark: $brand-color-dark;
 // $brand-color-light: lighten($brand-color, 20);
 
 
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/icons/font/fontello.eot?77726351');
+    src: url('../fonts/icons/font/fontello.eot?77726351#iefix') format('embedded-opentype'),
+         url('../fonts/icons/font/fontello.woff?77726351') format('woff'),
+         url('../fonts/icons/font/fontello.ttf?77726351') format('truetype'),
+         url('../fonts/icons/font/fontello.svg?77726351#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 
 // Fonts
 $body-font: "Roboto", Arial, Helvetica, Verdana, sans-serif;
