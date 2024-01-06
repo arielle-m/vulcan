@@ -19,20 +19,6 @@ header {
   display:flex;
   justify-content: space-between;
   align-items: center;
-
-  // 1251px:(.55')
-  @include mq($desktopMedium) {
-    height: 11.5rem;
-  }
-
-  // 1538px:(.56')
-  @include mq(96.1em) {
-    height: 20.5rem;
-  }
-  // 1850px:(.57')
-  @include mq(115.625em) {
-    height: 22rem;
-  }
 }
 
 
@@ -85,13 +71,6 @@ a.site-logo {
   width: 0;
 }
 
-
-// site navigation
-// .site-navigation {
-  // grid-column: 2/3;
-  // justify-self: end;
-// }
-
 .site-navigation ul {
   display: none;
   height: 0;
@@ -104,16 +83,11 @@ a.site-logo {
   z-index: 90; 
   right:0;
   top: 3.3rem;
-  // TODO : find exact height value; get rid of overlap
-
-  // transform-origin: center top;
-  // transition: height $animation-timing;
 }
-// TODO : add animation; probably height 0 -> max
+
 
 .site-navigation.toggled ul {
   display: block;
-  // height: max-content;
 }
 
 .site-navigation a {
@@ -124,7 +98,7 @@ a.site-logo {
   color: $light;
   background-color: #{$gray4}b5;
   font-weight: $regular;
-  text-align: left;  
+  text-align: left; 
 }
 
 /* navigation links */

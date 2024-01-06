@@ -471,7 +471,6 @@ a.button-outline:active {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1rem;
@@ -509,21 +508,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media (min-width: 78.1875em) {
-  .site-header {
-    height: 11.5rem;
-  }
-}
-@media (min-width: 96.1em) {
-  .site-header {
-    height: 20.5rem;
-  }
-}
-@media (min-width: 115.625em) {
-  .site-header {
-    height: 22rem;
-  }
 }
 
 .site-logo {
