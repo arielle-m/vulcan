@@ -1698,6 +1698,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  padding: 0;
 }
 .footer .footer-menu ul li {
   margin: 0 10px;
@@ -1715,15 +1716,17 @@ header {
   align-items: center;
   gap: 5px;
 }
-.footer .social-icon {
-  width: 30px;
-  height: 30px;
-}
 .footer p {
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media (min-width: 53.125em) {
+  .footer .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
