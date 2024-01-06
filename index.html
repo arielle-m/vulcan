@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="styles/styles.css" />
   <script src="scripts/carousel.js" defer></script>
   <script src="scripts/menu.js" defer></script>
+  <script src="https://player.vimeo.com/api/player.js" defer></script>
 </head>
 
 <body id="#top">
@@ -78,8 +79,6 @@
         <input type="radio" id="carousel-1" class="carousel-dot" name="carousel[]" checked />
         <input type="radio" id="carousel-2" class="carousel-dot" name="carousel[]" />
         <input type="radio" id="carousel-3" class="carousel-dot" name="carousel[]" />
-        <!-- <input type="radio" id="carousel-4" name="carousel[]" />
-          <input type="radio" id="carousel-5" name="carousel[]" /> -->
         <ul class="carousel__items">
           <li class="carousel__item">
             <img src="images/header-slider-img-01.jpg" alt="Carousel background image of a machine" />
@@ -90,39 +89,21 @@
           <li class="carousel__item">
             <img src="images/header-slider-img-03.jpg" alt="Carousel background image of two technicians working" />
           </li>
-          <!-- <li class="carousel__item">
-              <img
-                src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg"
-                alt=""
-              />
-            </li>
-            <li class="carousel__item">
-              <img
-                src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg"
-                alt=""
-              />
-            </li> -->
         </ul>
         <div class="carousel__prev">
           <label for="carousel-1"></label>
           <label for="carousel-2"></label>
           <label for="carousel-3"></label>
-          <!-- <label for="carousel-4"></label>
-            <label for="carousel-5"></label> -->
         </div>
         <div class="carousel__next">
           <label for="carousel-1"></label>
           <label for="carousel-2"></label>
           <label for="carousel-3"></label>
-          <!-- <label for="carousel-4"></label>
-            <label for="carousel-5"></label> -->
         </div>
         <div class="carousel__nav">
           <label for="carousel-1"></label>
           <label class="carousel-label" for="carousel-2"></label>
           <label for="carousel-3"></label>
-          <!-- <label for="carousel-4"></label>
-            <label for="carousel-5"></label> -->
         </div>
       </div>
 
@@ -295,10 +276,10 @@
         <!-- about -->
       </section>
       <section class="video">
-        <iframe src="https://player.vimeo.com/video/183929811" frameborder="0" style="border: 15px solid #154a66;"
-          webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
         <!-- video -->
-
+          <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/183929811?h=46d7273d42&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%; border: 15px solid #154a66;" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen>Your browser does not support embedded frames (iframes) <a href="https://player.vimeo.com/video/183929811" target="_blank">further</a></iframe>
+          </div>
       </section>
       <section class="newsletter">
         <p>Stay in the know. Sign up for our newsletter.</p>
@@ -315,15 +296,16 @@
           <h2>Installed in a city near you</h2>
           <button>find a vulcan install</button>
         </section>
+        <!-- contact -->
         <section class="contact">
           <h2>ready to spec vulcan for your project</h2>
           <button>contact us</button>
         </section>
+        <div class="footer-wave-container">
+          <img class="footer-wave-img" src="images/wave-blue-light.png" aria-hidden="true" alt="footer layer" />
+        </div>
       </div>
     </main>
-  </div>
-  <div class="footer-wave-container">
-    <img class="footer-wave-img" src="images/wave-blue-light.png" aria-hidden="true" alt="footer layer" />
   </div>
   <footer class="footer">
     <div class="footer-logo">

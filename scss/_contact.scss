@@ -3,71 +3,126 @@
 @use "mixins" as *;
 
 .vulcan-install {
-    background-image: url(/images/map.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-image: url(/images/map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
+  color: $light;
+  padding: 80px 0;
+  a {
     color: $light;
-    padding: 80px 0;
-    a {
-        color: $light;
-    }
-    h2 {
-        font-size: 1.5em;
-        font-weight: $bold;
-        padding: 0 10vw;
-        color: #504f4f;
-    }
-    button {
-        @include btn;
-        color: #504f4f;
-        border: 1px solid black; 
-        margin: 0 0 20px 0;
-        padding: 0.6em 1.8em;
-        font-size: 0.9em;
-        font-weight: $bold;
-    }
+  }
+  h2 {
+    font-size: 1.5em;
+    font-weight: $bold;
+    padding: 0 10vw;
+    color: #504f4f;
+  }
+  button {
+    @include btn;
+    color: #504f4f;
+    border: 1px solid black;
+    margin: 0 0 20px 0;
+    padding: 0.6em 1.8em;
+    font-size: 0.9em;
+    font-weight: $bold;
+  }
 }
 
 .contact {
-    background-color: $pri-da;
+  background-color: $pri-da;
+  color: $light;
+  padding-top: 10px;
+  h2 {
+    font-size: 1.5em;
+    font-weight: $bold;
     color: $light;
-    padding-top: 10px;
-    h2 {
-        font-size: 1.5em;
-        font-weight: $bold;
-        color: $light;
-        margin: 2rem 20% 0 20%;
-    }
-    button {
-        @include btn;
-        margin: 1rem auto 3rem auto;
-        padding: 0.6em 1.8em;
-        font-size: 0.9em;
-        font-weight: $bold;
-    }
+    margin: 2rem 20% 0 20%;
+  }
+  button {
+    @include btn;
+    margin: 1rem auto 3rem auto;
+    padding: 0.6em 1.8em;
+    font-size: 0.9em;
+    font-weight: $bold;
+  }
+}
+.contact-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: $pri-da;
+  height: 100%;
 }
 
-@media (min-width: $tabletPortrait){
-    .vulcan-install {
-        width: 50%;
-        button {
-            background-color: $pri;
-            color: $light;
-            border: none;
-        }
+.footer-wave-container {
+  overflow-x: hidden;
+  height: 80px;
+}
+
+.footer-wave-img {
+  position: absolute;
+  max-width: none;
+  width: 200vw;
+  height: 80px;
+  bottom: -1rem;
+  left: -1rem;
+  right: 0;
+}
+
+@media (min-width: $tabletPortrait) {
+  .vulcan-install {
+    width: 50%;
+    button {
+      background-color: $pri;
+      color: $light;
+      border: none;
     }
-    .contact {
-        width: 50%;
-        button {
-            background-color: $pri;
-            border: none;
-        }
+  }
+  .contact {
+    width: 50%;
+    order: -1;
+    button {
+      background-color: $pri;
+      border: none;
     }
-    .contact-wrapper {
-        background-color: $pri-da;
-        display: flex;
-        align-items: center;
-    }
+  }
+  .contact-wrapper {
+    background-color: $pri-da;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-wave-img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+// 1177px
+@media (min-width: 73.56em) {
+  .vulcan-install,
+  .contact {
+    height: 20rem;
+  }
+
+  .contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .contact h2,
+  .vulcan-install h2 {
+    margin-top: 0;
+  }
+}
+
+// 1850px:(.57')
+@media (min-width: 115.625em) {
+  .footer-wave-img {
+    width: 100vw;
+  }
 }

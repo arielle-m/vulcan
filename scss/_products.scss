@@ -3,8 +3,6 @@
 // @use "mixins" as *;
 
 .products {
-  position: relative;
-
   h2 {
     font-size: 1.4rem;
     color: $gray3;
@@ -65,12 +63,12 @@
     max-width: none;
     width: 200vw;
     height: 80px;
-    bottom: -0.5rem;
     margin-left: -1rem;
   }
 
   .products-layer-container {
     overflow: hidden;
+    height: 80px;
   }
 
   // 420px

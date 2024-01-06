@@ -2,31 +2,21 @@
 @use "variables" as *;
 
 .video {
-    background-color: $pri;
-    padding: 5em 7em 5em;
-    margin: 0 auto;
+  background-color: $pri;
+  padding: 4em 10vw;
+  margin: 0 auto;
 
-    @media (min-width: $phonePortrait){
-        iframe{
-            height:125px;
-            width: 100%;
-        }
-    }
+  iframe {
+    background-color: green;
+  }
 
-    @media (min-width: $tabletPortrait){
-        iframe{
-            height:370px;
-            width:686px;
-        }
-    }
+  // //850px
+  @media (min-width: $tabletPortrait) {
+    padding: 4em 15vw;
+  }
 
-    @media (min-width: $desktopMedium){
-        iframe{
-            height:470px;
-            width:800px;
-        }
-    }
+  //1402px
+  @media (min-width: 87.62em) {
+    padding: 5em 18vw;
+  }
 }
-
-
-
